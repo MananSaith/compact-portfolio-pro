@@ -68,7 +68,7 @@ const Stats = () => {
           <StatCounter end={10} label="Current Projects" />
           <StatCounter end={25} label="Happy Clients" />
           <StatCounter end={30} label="Completed Projects" />
-          <StatCounter end={2} label="Years Experience" />
+          <StatCounter end={4} label="Years Experience" />
         </div>
       </div>
     </section>

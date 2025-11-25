@@ -14,10 +14,20 @@ const Contact = () => {
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault();
-    
+
+    // Generate mailto link
     const mailtoLink = `mailto:abdulmanan@linzatechhive.com?subject=${encodeURIComponent(formData.subject)}&body=${encodeURIComponent(`Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`)}`;
-    
+
+    // Open default mail client
     window.location.href = mailtoLink;
+
+    // Clear form fields
+    setFormData({
+      name: "",
+      email: "",
+      subject: "",
+      message: ""
+    });
   };
 
   return (
@@ -27,7 +37,7 @@ const Contact = () => {
           <h2 className="text-4xl font-bold mb-2">Get In Touch</h2>
           <p className="text-muted-foreground">Let's discuss your next project</p>
         </div>
-        
+
         <form onSubmit={handleSubmit} className="space-y-5">
           <div className="grid md:grid-cols-2 gap-5">
             <Input
@@ -46,7 +56,7 @@ const Contact = () => {
               className="bg-background border-border"
             />
           </div>
-          
+
           <Input
             placeholder="Subject"
             value={formData.subject}
@@ -54,7 +64,7 @@ const Contact = () => {
             required
             className="bg-background border-border"
           />
-          
+
           <Textarea
             placeholder="Your Message"
             value={formData.message}
@@ -63,7 +73,7 @@ const Contact = () => {
             rows={6}
             className="bg-background border-border resize-none"
           />
-          
+
           <Button type="submit" size="lg" className="w-full">
             Send Message
             <Send className="ml-2 h-4 w-4" />

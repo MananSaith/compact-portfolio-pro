@@ -2,29 +2,36 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    title: "Flutter Developer",
-    company: "XcellMobi",
-    period: "2023 - Present",
-    description: "Leading Flutter development for cross-platform applications"
-  },
-  {
-    title: "Junior Developer",
-    company: "DigixValley",
-    period: "2022 - 2023",
-    description: "Developed and maintained mobile applications"
-  },
-  {
-    title: "Junior Developer",
-    company: "Aylvah",
-    period: "2021 - 2022",
-    description: "Worked on multiple client projects and app features"
-  },
-  {
-    title: "Flutter Intern",
-    company: "Advisable Technology",
-    period: "2021",
-    description: "Started professional journey learning Flutter development"
-  }
+  title: "Flutter Developer",
+  company: "Linza TechHive",
+  period: "2023 - Present",
+  description: "Building high-quality, scalable Flutter applications while leading end-to-end mobile development for multiple clients."
+},
+{
+  title: "Flutter Developer",
+  company: "XcellMobi",
+  period: "2022 - 2023",
+  description: "Developed cross-platform apps with clean UI, API integration, and real-time features for production use."
+},
+{
+  title: "Junior Developer",
+  company: "DigixValley",
+  period: "2021 - 2022",
+  description: "Delivered feature-rich mobile applications, optimized performance, and contributed to several live client projects."
+},
+{
+  title: "Junior Developer",
+  company: "Aylvah",
+  period: "2021 - 2021",
+  description: "Supported development of multiple Flutter apps, implemented UI components, and assisted in project deployment."
+}
+
+  // {
+  //   title: "Flutter Intern",
+  //   company: "Advisable Technology",
+  //   period: "2021",
+  //   description: "Started professional journey learning Flutter development"
+  // }
 ];
 
 const Experience = () => {

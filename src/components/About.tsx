@@ -1,5 +1,5 @@
 import { MapPin, Phone, Mail } from "lucide-react";
-
+import p1 from "@/assets/profileImage/p1.png";
 const About = () => {
   return (
     <section className="py-16 px-4 md:px-8">
@@ -8,7 +8,8 @@ const About = () => {
           <div className="relative">
             <div className="w-full aspect-square rounded-2xl overflow-hidden border border-primary/20 bg-gradient-to-br from-primary/10 to-transparent">
               <img 
-                src="/placeholder.svg" 
+                // src="/placeholder.svg" 
+                src={p1}
                 alt="Abdul Manan"
                 className="w-full h-full object-cover"
               />
@@ -19,13 +20,17 @@ const About = () => {
             <div>
               <h2 className="text-4xl font-bold mb-4">About Me</h2>
               <p className="text-muted-foreground leading-relaxed mb-4">
-                Flutter Developer with 2+ years of experience building reliable cross-platform applications. 
-                Skilled in UI building, Firebase, APIs, and scalable app architecture.
+                I’m a Flutter Developer with 4+ years of experience building reliable, scalable, 
+                and business-focused cross-platform apps. I turn designs and ideas into production-ready
+                 Flutter applications across Android, iOS, Web, and Desktop, focusing on clean, 
+                 maintainable code, Firebase and API integration, and performance-optimized, 
+                 pixel-perfect designs.
               </p>
               <p className="text-muted-foreground leading-relaxed">
-                I specialize in creating seamless user experiences across Android, iOS, Web, and Desktop platforms. 
-                My focus is on writing clean, maintainable code while delivering pixel-perfect designs.
-              </p>
+               I build apps that help businesses grow from concept to launch, ensuring high quality and 
+               real-world impact. I prioritize quality over quantity, delivering error-free, lasting 
+               solutions, and collaborating only with clients who value long-term results.
+                </p>
             </div>
             
             <div className="space-y-3">

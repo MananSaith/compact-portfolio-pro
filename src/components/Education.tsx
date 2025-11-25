@@ -3,21 +3,22 @@ import { GraduationCap, Award } from "lucide-react";
 
 const education = [
   {
+    degree: "Master of Science in Computer Science",
+    institution: "Lahore Garrison University",
+    period: "2024 - 2026",
+    type: "degree"
+  },
+  {
     degree: "Bachelor of Science in Computer Science",
     institution: "Lahore Garrison University",
     period: "2020 - 2024",
     type: "degree"
   },
-  {
-    degree: "Intermediate in Computer Science",
-    institution: "Apex Group of Colleges",
-    period: "2018 - 2020",
-    type: "degree"
-  },
+ 
   {
     degree: "App Development Certificate",
     institution: "Professional Development Program",
-    period: "2023",
+    period: "2022",
     type: "certificate"
   }
 ];

@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Download } from "lucide-react";
+// import { ArrowRight, Download ,Linkedin } from "lucide-react";
+import { ArrowRight, Download, Linkedin } from "lucide-react";
+import p1 from "@/assets/profileImage/p1.png";
 import { Link } from "react-router-dom";
 
 const Hero = () => {
@@ -23,22 +25,33 @@ const Hero = () => {
                   <ArrowRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                 </Button>
               </Link>
-              <Button size="lg" variant="outline" className="gap-2">
+              {/* <Button size="lg" variant="outline" className="gap-2">
                 <Download className="h-4 w-4" />
                 Download CV
-              </Button>
+              </Button> */}
+                <a
+    href="https://www.linkedin.com/in/abdul-manan-8a9202240/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Button size="lg" variant="outline" className="gap-2">
+      <Linkedin className="h-4 w-4" />
+      LinkedIn
+    </Button>
+  </a>
             </div>
           </div>
           
-          <div className="flex justify-center md:justify-end">
-            <div className="relative w-80 h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-transparent border border-primary/20">
-              <img 
-                src="/placeholder.svg" 
-                alt="Abdul Manan"
-                className="w-full h-full object-cover"
-              />
+            <div className="flex justify-center md:justify-end">
+              <div className="relative w-80 h-96 rounded-2xl overflow-hidden bg-gradient-to-br from-primary/20 to-transparent border border-primary/20">
+                <img 
+                 // src="/placeholder.svg" 
+                  src={p1}
+                  alt="Abdul Manan"
+                  className="w-full h-full object-cover"
+                />
+              </div>
             </div>
-          </div>
         </div>
       </div>
     </section>
