@@ -40,14 +40,14 @@ const About = () => {
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="h-5 w-5 text-primary shrink-0" />
-                <a href="tel:+923019102785" className="hover:text-primary transition-colors">
-                  +92 301 9102785
+                <a href="tel:+923710751715" className="hover:text-primary transition-colors">
+                  +92 371 0751715
                 </a>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="h-5 w-5 text-primary shrink-0" />
-                <a href="mailto:abdulmanan@linzatechhive.com" className="hover:text-primary transition-colors">
-                  abdulmanan@linzatechhive.com
+                <a href="mailto:mrmanan143@gmail.com" className="hover:text-primary transition-colors">
+                  mrmanan143@gmail.com
                 </a>
               </div>
             </div>
